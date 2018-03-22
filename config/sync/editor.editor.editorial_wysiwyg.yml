@@ -1,14 +1,12 @@
-uuid: 5fcd961d-8604-464b-89a6-ff8269dd10b4
+uuid: 29ca352e-716d-4cce-b3bf-017b7cec98bb
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.editorial_wysiwyg
   module:
     - ckeditor
-_core:
-  default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
-format: basic_html
+format: editorial_wysiwyg
 editor: ckeditor
 settings:
   toolbar:
@@ -19,9 +17,10 @@ settings:
           items:
             - Bold
             - Underline
+            - Strike
             - Italic
         -
-          name: Linking
+          name: Links
           items:
             - DrupalLink
             - DrupalUnlink
@@ -36,20 +35,29 @@ settings:
             - Blockquote
             - DrupalImage
         -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
           name: Tools
           items:
             - Source
+            - Table
+            - Redo
+            - Undo
+        -
+          name: Text
+          items:
+            - JustifyRight
+            - JustifyBlock
+            - JustifyCenter
+            - JustifyLeft
+            - Copy
+            - Paste
+            - PasteFromWord
   plugins:
     language:
       language_list: un
     stylescombo:
       styles: ''
 image_upload:
-  status: true
+  status: false
   scheme: public
   directory: inline-images
   max_size: ''

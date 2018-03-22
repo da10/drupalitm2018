@@ -1,0 +1,14 @@
+uuid: 43fad537-d230-45d9-83a7-ca081486b358
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.event_creatot
+  module:
+    - user
+id: user_remove_role_action.event_creatot
+label: 'Remove the Event Creatot role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: event_creatot

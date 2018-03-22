@@ -1,0 +1,19 @@
+uuid: e4023710-aab5-4d6b-9aa0-fef7d9b349c2
+langcode: en
+status: true
+dependencies: {  }
+id: event_creatot
+label: 'Event Creatot'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access in-place editing'
+  - 'create event content'
+  - 'create url aliases'
+  - 'delete event revisions'
+  - 'delete own event content'
+  - 'edit own event content'
+  - 'revert event revisions'
+  - 'use text format editorial_wysiwyg'
+  - 'view the administration theme'

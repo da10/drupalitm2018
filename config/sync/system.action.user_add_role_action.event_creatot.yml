@@ -1,0 +1,14 @@
+uuid: 7aab4495-c2a0-467f-83d8-35834c334d73
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.event_creatot
+  module:
+    - user
+id: user_add_role_action.event_creatot
+label: 'Add the Event Creatot role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: event_creatot

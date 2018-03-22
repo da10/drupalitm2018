@@ -1,0 +1,48 @@
+uuid: b9a61b62-e51b-4b5c-8836-ad8750e71fb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.chostas.field_img
+    - image.style.thumbnail
+    - taxonomy.vocabulary.chostas
+  module:
+    - image
+    - path
+    - text
+id: taxonomy_term.chostas.default
+targetEntityType: taxonomy_term
+bundle: chostas
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_img:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

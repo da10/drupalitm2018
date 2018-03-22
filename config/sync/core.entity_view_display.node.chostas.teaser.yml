@@ -1,0 +1,28 @@
+uuid: 0f7418a3-70a1-4287-bed4-56d3d916467b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.chostas.body
+    - node.type.chostas
+  module:
+    - text
+    - user
+id: node.chostas.teaser
+targetEntityType: node
+bundle: chostas
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
