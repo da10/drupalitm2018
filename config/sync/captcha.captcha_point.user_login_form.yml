@@ -1,0 +1,7 @@
+uuid: b896cc1f-dcaa-40c1-a50a-4c06509905c1
+langcode: en
+status: true
+dependencies: {  }
+formId: user_login_form
+captchaType: recaptcha/reCAPTCHA
+label: user_login_form

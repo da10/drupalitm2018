@@ -1,0 +1,7 @@
+uuid: 993ee1b7-572a-43b7-9e03-09b467247aa8
+langcode: en
+status: false
+dependencies: {  }
+formId: node_chostas_form
+captchaType: default
+label: null

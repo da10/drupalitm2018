@@ -1,0 +1,51 @@
+uuid: 5d07260e-ba08-4ebd-8774-cbf1cba558fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.featured_articles
+    - field.field.entity_subqueue.featured_articles.field_content
+    - field.field.entity_subqueue.featured_articles.field_image
+    - image.style.thumbnail
+  module:
+    - image
+id: entity_subqueue.featured_articles.default
+targetEntityType: entity_subqueue
+bundle: featured_articles
+mode: default
+content:
+  field_content:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_image:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  items:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
