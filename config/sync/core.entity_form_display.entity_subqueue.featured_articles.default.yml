@@ -1,11 +1,10 @@
-uuid: 5d07260e-ba08-4ebd-8774-cbf1cba558fd
+uuid: 3cf74a98-e7e8-4d2d-8247-d5132f9edd77
 langcode: en
 status: true
 dependencies:
   config:
     - entityqueue.entity_queue.featured_articles
-    - field.field.entity_subqueue.featured_articles.field_content
-    - field.field.entity_subqueue.featured_articles.field_image
+    - field.field.entity_subqueue.featured_articles.field_img
     - image.style.thumbnail
   module:
     - image
@@ -14,16 +13,7 @@ targetEntityType: entity_subqueue
 bundle: featured_articles
 mode: default
 content:
-  field_content:
-    weight: 7
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_image:
+  field_img:
     weight: 6
     settings:
       progress_indicator: throbber

@@ -1,17 +1,17 @@
-uuid: 0cbeb564-a36d-4348-8146-2f527e1a0044
+uuid: ac35df73-cdc0-4fb2-ac03-4269c27f2b84
 langcode: en
 status: true
 dependencies:
   config:
     - entityqueue.entity_queue.featured_articles
-    - field.storage.entity_subqueue.field_image
+    - field.storage.entity_subqueue.field_img
   module:
     - image
-id: entity_subqueue.featured_articles.field_image
-field_name: field_image
+id: entity_subqueue.featured_articles.field_img
+field_name: field_img
 entity_type: entity_subqueue
 bundle: featured_articles
-label: image
+label: img
 description: ''
 required: false
 translatable: false

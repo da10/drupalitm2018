@@ -1,4 +1,4 @@
-uuid: b2ea14b3-8871-4f81-a4e9-6814abcf3e85
+uuid: 3826584d-0097-4a55-b1b8-20b59e95e463
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - entityqueue
     - file
     - image
-id: entity_subqueue.field_image
-field_name: field_image
+id: entity_subqueue.field_img
+field_name: field_img
 entity_type: entity_subqueue
 type: image
 settings:
