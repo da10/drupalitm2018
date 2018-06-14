@@ -1,0 +1,20 @@
+uuid: 213290d0-f5d7-4e83-ab91-bae16b355777
+langcode: en
+status: true
+dependencies:
+  module:
+    - itm_lab3
+  theme:
+    - bootstrap_barrio
+id: bootstrap_barrio_labblock
+theme: bootstrap_barrio
+region: top_header
+weight: 0
+provider: null
+plugin: lab_block
+settings:
+  id: lab_block
+  label: 'Lab block'
+  provider: itm_lab3
+  label_display: visible
+visibility: {  }

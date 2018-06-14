@@ -1,0 +1,20 @@
+uuid: 0263dce4-7cd9-49d0-a36a-9e96db7b7d01
+langcode: en
+status: true
+dependencies:
+  module:
+    - itm_lab3
+  theme:
+    - demo_theme
+id: labblock
+theme: demo_theme
+region: footer
+weight: 0
+provider: null
+plugin: lab_block
+settings:
+  id: lab_block
+  label: 'Lab block'
+  provider: itm_lab3
+  label_display: visible
+visibility: {  }

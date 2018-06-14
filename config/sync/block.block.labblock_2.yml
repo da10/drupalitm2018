@@ -1,0 +1,20 @@
+uuid: a2ca7b93-9f52-42f1-9409-25559bc78f3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - itm_lab3
+  theme:
+    - bartik
+id: labblock_2
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: lab_block
+settings:
+  id: lab_block
+  label: 'Lab block'
+  provider: itm_lab3
+  label_display: visible
+visibility: {  }
